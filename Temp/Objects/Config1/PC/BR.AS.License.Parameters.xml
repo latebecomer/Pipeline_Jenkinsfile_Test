@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Parameters>
+  <Connection>
+    <DeviceParameters>/IF=COM1 /BD=57600 /PA=2 /IT=20 /RS=0</DeviceParameters>
+    <ConnectionParameters>/RT=1000 /AM=*</ConnectionParameters>
+  </Connection>
+  <AsProject>
+    <ApjFullFileName>Z:\HYEONGJUN KIM\Hyundai_Heavy_Industry\BR_Projects\AS_Target_Simulink_Test\AS_Target_Simulink_Test.apj</ApjFullFileName>
+    <ProjectName>AS_Target_Simulink_Test</ProjectName>
+    <ActiveConfigurationName>Config1</ActiveConfigurationName>
+    <LicenseDataFolder>Z:\HYEONGJUN KIM\Hyundai_Heavy_Industry\BR_Projects\AS_Target_Simulink_Test\Temp\Objects\Config1\PC</LicenseDataFolder>
+  </AsProject>
+  <General>
+    <DeleteParameterFile>false</DeleteParameterFile>
+  </General>
+</Parameters>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=4.5.2.102?><Package xmlns="http://br-automation.co.at/AS/Package" Version="1.00.0">
+   <Objects>
+      <Object Description="Global data types" Type="File">Global.typ</Object>
+      <Object Description="Global variables" Type="File">Global.var</Object>
+      <Object Description="Global libraries" Type="Package">Libraries</Object>
+      <Object Description="Default includes for B&amp;R Automation Studio Target for Simulink"
+              Type="Package">MATLAB_includes</Object>
+      <Object Type="Package">Model</Object>
+      <Object Type="Package">Controller</Object>
+      <Object Description="" Language="ANSIC" Type="Programm">TD_Test</Object>
+      <Object Description="" Language="ANSIC" Type="Programm">sltest</Object>
+   </Objects>
+</Package>

@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<OpcUaSource FileVersion="4" ArVersion="D4.52">
+  <Aliases>
+    <ACLAliases />
+    <EURangeViolationAliases />
+    <EURangesAliases />
+    <EngineeringUnitAliases />
+  </Aliases>
+  <DefaultView>
+    <Module Name="&lt;Default&gt;">
+      <GlobalVariables Name="Global Variables">
+        <Variable Name="F" />
+        <Variable Name="ref" />
+        <Variable Name="x" />
+        <Variable Name="y" />
+        <Variable Name="reset" />
+        <Variable Name="start" />
+      </GlobalVariables>
+    </Module>
+  </DefaultView>
+</OpcUaSource>

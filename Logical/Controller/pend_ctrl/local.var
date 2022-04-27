@@ -1,0 +1,3 @@
+VAR
+	signal : BOOL;
+END_VAR

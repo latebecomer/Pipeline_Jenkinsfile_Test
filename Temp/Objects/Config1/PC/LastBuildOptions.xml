@@ -1,0 +1,386 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RuleSetOptions>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\iomap.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config1\pc\iomap.iom" LastWriteTime="2022-03-23 14:50:04" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config1\pc\pvmap.vvm" LastWriteTime="2022-03-23 14:50:04" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\channelconfiguration.xml" LastWriteTime="2022-04-20 16:42:14" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config1\hardware.hw" LastWriteTime="2022-04-04 17:42:32" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config1\pc\cpu.sw" LastWriteTime="2022-04-04 21:53:24" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Physical\Config1\PC\IoMap.iom&quot; &quot;$(AS_PROJECT_PATH)\Physical\Config1\PC\PvMap.vvm&quot; -m &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\PC\ConfigInfo.cfi&quot; -g &quot;$(AS_PROJECT_PATH)\Temp\Objects\Declarations.lst&quot; -x &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\PC\ChannelConfiguration.xml&quot; -v V1.00.0 -f &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\PC&quot; -iomap -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\PC\iomap.br&quot; -T SG4 -B D4.52 -P &quot;$(AS_PROJECT_PATH)&quot; -s &quot;Config1.PC&quot;" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\opcuamap.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config1\pc\connectivity\opcua\opcuamap.uad" LastWriteTime="2022-04-07 12:23:30" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\global.var" LastWriteTime="2022-04-07 11:27:44" />
+    <CommandLine Parameter="'Z:/HYEONGJUN KIM/Hyundai_Heavy_Industry/BR_Projects/AS_Target_Simulink_Test/Physical/Config1/PC/Connectivity/OpcUA/OpcUaMap.uad' -o 'Z:/HYEONGJUN KIM/Hyundai_Heavy_Industry/BR_Projects/AS_Target_Simulink_Test/Temp/Objects/Config1/PC/OpcUaMap.br' -H 'Z:/HYEONGJUN KIM/Hyundai_Heavy_Industry/BR_Projects/AS_Target_Simulink_Test/Physical/Config1/Hardware.hw' -B D4.52 -c Config1 -P 'Z:/HYEONGJUN KIM/Hyundai_Heavy_Industry/BR_Projects/AS_Target_Simulink_Test' " />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\ashwac.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config1\hardware.hw" LastWriteTime="2022-04-04 17:42:32" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Physical\Config1\Hardware.hw&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\PC\ashwac.br&quot; -L &quot;AsArLog: V*, AsIecCon: V*, AsTCP: V*, astime: V*, brsystem: V*, operator: V*, pctr_fun: V1.00.0, runtime: V*, sys_lib: V*&quot; -c &quot;Config1&quot; -Z &quot;UnitSystem: n.d, TextSystem: n.d, ProgrammingSystem: n.d, Connectivity: n.d, AAS: n.d&quot; -M IA32 -B D4.52 -P &quot;$(AS_PROJECT_PATH)&quot; -s &quot;Config1&quot; -T SG4 " />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\sysconf.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config1\hardware.hw" LastWriteTime="2022-04-04 17:42:32" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Physical\Config1\Hardware.hw&quot;  -c &quot;Config1&quot; -sysconf -S &quot;PC&quot; -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\PC\sysconf.br&quot; -T SG4 -B D4.52 -P &quot;$(AS_PROJECT_PATH)&quot; -s &quot;Config1&quot; " />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\asfw.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config1\hardware.hw" LastWriteTime="2022-04-04 17:42:32" />
+    <Prerequisite ID="c:\brautomation\as45\upgrades\modified.txt" LastWriteTime="2018-12-17 18:20:22" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Physical\Config1\Hardware.hw&quot;  -v V1.00.0 -S &quot;PC&quot; -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\PC\asfw.br&quot; -T SG4 -B D4.52 -P &quot;$(AS_PROJECT_PATH)&quot; -c &quot;Config1&quot; -zip -s &quot;Config1&quot; -firmware " />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\ashwd.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config1\hardware.hw" LastWriteTime="2022-04-04 17:42:32" />
+    <Prerequisite ID="c:\brautomation\as45\upgrades\modified.txt" LastWriteTime="2018-12-17 18:20:22" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Physical\Config1\Hardware.hw&quot;  -v V1.00.0 -S &quot;PC&quot; -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\PC\ashwd.br&quot; -T SG4 -B D4.52 -P &quot;$(AS_PROJECT_PATH)&quot; -c &quot;Config1&quot; -zip -s &quot;Config1&quot; -hwd " />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\arconfig.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config1\pc\iomap.iom" LastWriteTime="2022-03-23 14:50:04" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config1\hardware.hw" LastWriteTime="2022-04-04 17:42:32" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Physical\Config1\PC\IoMap.iom&quot; &quot;$(AS_PROJECT_PATH)\Physical\Config1\Hardware.hw&quot;  -arconfig -C &quot;/RT=1000 /AM=*&quot; -D &quot;/IF=COM1 /BD=57600 /PA=2 /IT=20 /RS=0&quot; -c &quot;Config1&quot; -v V1.00.0 -S &quot;PC&quot; -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\PC\arconfig.br&quot; &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\PC\ChannelConfiguration.xml&quot; &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\PC\HardwareConfiguration.xml&quot; &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\PC\ReActionTechnologyConfiguration.xml&quot; -T SG4 -B D4.52 -P &quot;$(AS_PROJECT_PATH)&quot; -s &quot;Config1&quot; " />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\udbdef.br">
+    <Prerequisite ID="c:\brautomation\as45\as\technologypackages\unitsystem\n.d\transfer\modules\sg4\udbdef.br" LastWriteTime="2018-11-12 23:25:24" />
+    <CommandLine Parameter="/c copy /B /Y &quot;C:\BrAutomation\AS45\AS\TechnologyPackages\UnitSystem\n.d\Transfer\Modules\SG4\udbdef.br&quot; &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\PC\udbdef.br&quot; &gt; nul" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\tcdata\tcdata.imx">
+    <Prerequisite ID="c:\brautomation\as45\as\technologypackages\textsystem\n.d\objectcatalog\elements\textconfig\template\tc.textconfig" LastWriteTime="2018-11-12 23:25:24" />
+    <CommandLine Parameter=" -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\PC\TCData\TCData.imx&quot; -c &quot;C:\BrAutomation\AS45\AS\TechnologyPackages\TextSystem\n.d\ObjectCatalog\Elements\TextConfig\Template\TC.textconfig&quot; -I &quot;C:\BrAutomation\AS\System\D0452&quot; &quot;C:\BrAutomation\AS45\AS\TechnologyPackages\UnitSystem\n.d&quot; -P &quot;$(AS_PROJECT_PATH)&quot;" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\tcdata\tcdata.s18d">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\tcdata\tcdata.imx" LastWriteTime="2022-04-20 16:42:14" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\PC\TCData\TCData.imx&quot; -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\PC\TCData\TCData.s18d&quot;" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\tcdata.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\tcdata\tcdata.s18d" LastWriteTime="2022-04-20 16:42:16" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\PC\TCData\TCData.s18d&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\PC\TCData.br&quot; -t TextModule" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\role.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config1\pc\accessandsecurity\userrolesystem\role.role" LastWriteTime="2022-03-23 14:50:04" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Physical\Config1\PC\AccessAndSecurity\UserRoleSystem\Role.role&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\PC\Role.br&quot; -zip -B D4.52 -z n.d -P &quot;$(AS_PROJECT_PATH)&quot; -c &quot;Config1&quot; " />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\user.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config1\pc\accessandsecurity\userrolesystem\user.user" LastWriteTime="2022-03-23 14:50:04" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Physical\Config1\PC\AccessAndSecurity\UserRoleSystem\User.user&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\PC\User.br&quot; -zip -B D4.52 -z n.d -P &quot;$(AS_PROJECT_PATH)&quot; -c &quot;Config1&quot; " />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\pend_ctrl.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\pend_ctrl\pend_ctrl.ox" LastWriteTime="2022-04-20 16:42:12" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config1\pc\cpu.per" LastWriteTime="2022-03-23 14:50:04" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\sys_lib\sys_lib.fun" LastWriteTime="2022-03-23 15:00:26" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\brsystem\brsystem.fun" LastWriteTime="2022-03-23 15:00:02" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\global.var" LastWriteTime="2022-04-07 11:27:44" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\controller\pend_ctrl\local.var" LastWriteTime="2022-04-01 12:48:40" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\controller\pend_ctrl\pend_ctrl.c" LastWriteTime="2022-04-07 11:35:50" />
+    <Prerequisite ID="c:\brautomation\as45\as\gnuinst\v4.1.2\i386-elf\include\bur\plctypes.h" LastWriteTime="2018-11-12 23:25:24" />
+    <Prerequisite ID="c:\brautomation\as45\as\gnuinst\v4.1.2\i386-elf\include\bur\plc.h" LastWriteTime="2018-11-12 23:25:24" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\controller\pend_ctrl\pend_ctrl_lin.h" LastWriteTime="2022-04-01 12:07:32" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\controller\pend_ctrl\rtwtypes.h" LastWriteTime="2022-04-01 12:07:32" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\matlab_includes\r2019b\rtw_continuous.h" LastWriteTime="2019-11-06 16:21:44" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\matlab_includes\r2019b\rtw_solver.h" LastWriteTime="2019-11-06 16:21:44" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\controller\pend_ctrl\pend_ctrl_lin_types.h" LastWriteTime="2022-04-01 12:07:32" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\PC\pend_ctrl\pend_ctrl.ox&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\PC\pend_ctrl.br&quot; -v V1.00.0 -f &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\PC\NT.ofs&quot; -offsetLT &quot;$(AS_PROJECT_PATH)\Binaries\Config1\PC\LT.ofs&quot; -T SG4 -M IA32 -B D4.52 -G V4.1.2  -extConstants -extOptions -lm -D MODEL=pend_ctrl_lin -D NUMST=1 -D NCSTATES=0 -D HAVESTDIO -D MODEL_HAS_DYNAMICALLY_LOADED_SFCNS=0 -D CLASSIC_INTERFACE=0 -D ALLOCATIONFCN=0 -D TID01EQ=0 -D TERMFCN=1 -D ONESTEPFCN=0 -D MAT_FILE=0 -D MULTI_INSTANCE_CODE=0 -D INTEGER_CODE=0 -D MT=0  -r Cyclic1 -p 2 -s &quot;Controller.pend_ctrl&quot; -L &quot;AsArLog: V*, AsIecCon: V*, AsTCP: V*, astime: V*, brsystem: V*, operator: V*, pctr_fun: V1.00.0, runtime: V*, sys_lib: V*&quot; -P &quot;$(AS_PROJECT_PATH)&quot; " />
+    <AdditionalBuildTrigger Key="VolatileMemory" Value="65535" />
+    <AdditionalBuildTrigger Key="PermanentAnalogMemory" Value="0" />
+    <AdditionalBuildTrigger Key="PermanentDigitalMemory" Value="0" />
+    <AdditionalBuildTrigger Key="RemanentMemory" Value="4096" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\pend_ctrl\pend_ctrl.ox">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\pend_ctrl\a.out" LastWriteTime="2022-04-20 16:42:12" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\sys_lib\sys_lib.fun" LastWriteTime="2022-03-23 15:00:26" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\brsystem\brsystem.fun" LastWriteTime="2022-03-23 15:00:02" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\global.var" LastWriteTime="2022-04-07 11:27:44" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\controller\pend_ctrl\local.var" LastWriteTime="2022-04-01 12:48:40" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\controller\pend_ctrl\pend_ctrl.c" LastWriteTime="2022-04-07 11:35:50" />
+    <Prerequisite ID="c:\brautomation\as45\as\gnuinst\v4.1.2\i386-elf\include\bur\plctypes.h" LastWriteTime="2018-11-12 23:25:24" />
+    <Prerequisite ID="c:\brautomation\as45\as\gnuinst\v4.1.2\i386-elf\include\bur\plc.h" LastWriteTime="2018-11-12 23:25:24" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\controller\pend_ctrl\pend_ctrl_lin.h" LastWriteTime="2022-04-01 12:07:32" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\controller\pend_ctrl\rtwtypes.h" LastWriteTime="2022-04-01 12:07:32" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\matlab_includes\r2019b\rtw_continuous.h" LastWriteTime="2019-11-06 16:21:44" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\matlab_includes\r2019b\rtw_solver.h" LastWriteTime="2019-11-06 16:21:44" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\controller\pend_ctrl\pend_ctrl_lin_types.h" LastWriteTime="2022-04-01 12:07:32" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\PC\pend_ctrl\a.out&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\PC\pend_ctrl\pend_ctrl.ox&quot; -T SG4 -r Cyclic1 -extOptions -lm -D MODEL=pend_ctrl_lin -D NUMST=1 -D NCSTATES=0 -D HAVESTDIO -D MODEL_HAS_DYNAMICALLY_LOADED_SFCNS=0 -D CLASSIC_INTERFACE=0 -D ALLOCATIONFCN=0 -D TID01EQ=0 -D TERMFCN=1 -D ONESTEPFCN=0 -D MAT_FILE=0 -D MULTI_INSTANCE_CODE=0 -D INTEGER_CODE=0 -D MT=0  -G V4.1.2  -B D4.52 " />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\pend_ctrl\a.out">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\pend_ctrl\pend_ctrl.c.o" LastWriteTime="2022-04-20 16:42:12" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\pend_ctrl\pend_ctrl_lin.c.o" LastWriteTime="2022-04-20 16:42:12" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\pend_ctrl\_bur_pvdef.c.o" LastWriteTime="2022-04-20 16:42:12" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\sys_lib\sys_lib.fun" LastWriteTime="2022-03-23 15:00:26" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\brsystem\brsystem.fun" LastWriteTime="2022-03-23 15:00:02" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\global.var" LastWriteTime="2022-04-07 11:27:44" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\controller\pend_ctrl\local.var" LastWriteTime="2022-04-01 12:48:40" />
+    <CommandLine Parameter=" -link &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\PC\pend_ctrl\pend_ctrl.c.o&quot; &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\PC\pend_ctrl\pend_ctrl_lin.c.o&quot; &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\PC\pend_ctrl\_bur_pvdef.c.o&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\PC\pend_ctrl\a.out&quot; -G V4.1.2  -T SG4 -M IA32 &quot;-Wl,$(AS_PROJECT_PATH)\Temp\Archives\Config1\PC\libpctr_fun.a&quot; &quot;-Wl,C:\BrAutomation\AS\System\D0452\SG4\IA32\libAsIecCon.a&quot; &quot;-Wl,C:\BrAutomation\AS\System\D0452\SG4\IA32\libAsTCP.a&quot; &quot;-Wl,C:\BrAutomation\AS\System\D0452\SG4\IA32\libAsArLog.a&quot; &quot;-Wl,C:\BrAutomation\AS\System\D0452\SG4\IA32\libsys_lib.a&quot; &quot;-Wl,C:\BrAutomation\AS\System\D0452\SG4\IA32\libbrsystem.a&quot; &quot;-Wl,C:\BrAutomation\AS\System\D0452\SG4\IA32\libastime.a&quot; &quot;-Wl,C:\BrAutomation\AS\System\D0452\SG4\IA32\libruntime.a&quot; &quot;-Wl,C:\BrAutomation\AS\System\D0452\SG4\IA32\liboperator.a&quot; -specs=I386specs_brelf -extOptions -lm -D MODEL=pend_ctrl_lin -D NUMST=1 -D NCSTATES=0 -D HAVESTDIO -D MODEL_HAS_DYNAMICALLY_LOADED_SFCNS=0 -D CLASSIC_INTERFACE=0 -D ALLOCATIONFCN=0 -D TID01EQ=0 -D TERMFCN=1 -D ONESTEPFCN=0 -D MAT_FILE=0 -D MULTI_INSTANCE_CODE=0 -D INTEGER_CODE=0 -D MT=0 " />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\pend_ctrl\pend_ctrl.c.o">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\controller\pend_ctrl\pend_ctrl.c" LastWriteTime="2022-04-07 11:35:50" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\sys_lib\sys_lib.fun" LastWriteTime="2022-03-23 15:00:26" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\brsystem\brsystem.fun" LastWriteTime="2022-03-23 15:00:02" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\global.var" LastWriteTime="2022-04-07 11:27:44" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\controller\pend_ctrl\local.var" LastWriteTime="2022-04-01 12:48:40" />
+    <Prerequisite ID="c:\brautomation\as45\as\gnuinst\v4.1.2\i386-elf\include\bur\plctypes.h" LastWriteTime="2018-11-12 23:25:24" />
+    <Prerequisite ID="c:\brautomation\as45\as\gnuinst\v4.1.2\i386-elf\include\bur\plc.h" LastWriteTime="2018-11-12 23:25:24" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\controller\pend_ctrl\pend_ctrl_lin.h" LastWriteTime="2022-04-01 12:07:32" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\controller\pend_ctrl\rtwtypes.h" LastWriteTime="2022-04-01 12:07:32" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\matlab_includes\r2019b\rtw_continuous.h" LastWriteTime="2019-11-06 16:21:44" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\matlab_includes\r2019b\rtw_solver.h" LastWriteTime="2019-11-06 16:21:44" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\controller\pend_ctrl\pend_ctrl_lin_types.h" LastWriteTime="2022-04-01 12:07:32" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Logical\Controller\pend_ctrl\pend_ctrl.c&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\PC\pend_ctrl\pend_ctrl.c.o&quot; -T SG4 -M IA32 -B D4.52 -G V4.1.2  -s &quot;Controller.pend_ctrl&quot; -t &quot;$(AS_PROJECT_PATH)\Temp&quot; -specs=I386specs_brelf -I &quot;$(AS_PROJECT_PATH)\Logical\Controller\pend_ctrl&quot; &quot;$(AS_PROJECT_PATH)\Temp\Includes\Controller\pend_ctrl&quot; &quot;$(AS_PROJECT_PATH)\Temp\Includes\Controller&quot; &quot;$(AS_PROJECT_PATH)\Temp\Includes&quot; &quot;$(AS_PROJECT_PATH)\Logical\MATLAB_includes\R2019b&quot; -trigraphs -fno-asm -D _DEFAULT_INCLUDES -D _SG4 -fPIC -O2 -Wall -include &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\PC\Libraries.h&quot; -extOptions -lm -D MODEL=pend_ctrl_lin -D NUMST=1 -D NCSTATES=0 -D HAVESTDIO -D MODEL_HAS_DYNAMICALLY_LOADED_SFCNS=0 -D CLASSIC_INTERFACE=0 -D ALLOCATIONFCN=0 -D TID01EQ=0 -D TERMFCN=1 -D ONESTEPFCN=0 -D MAT_FILE=0 -D MULTI_INSTANCE_CODE=0 -D INTEGER_CODE=0 -D MT=0  -x c -P &quot;$(AS_PROJECT_PATH)&quot;" />
+    <AdditionalBuildTrigger Key="IecDeclarationsInAnsiC" Value="False" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\pend_ctrl\pend_ctrl_lin.c.o">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\controller\pend_ctrl\pend_ctrl_lin.c" LastWriteTime="2022-04-01 12:07:32" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\sys_lib\sys_lib.fun" LastWriteTime="2022-03-23 15:00:26" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\brsystem\brsystem.fun" LastWriteTime="2022-03-23 15:00:02" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\global.var" LastWriteTime="2022-04-07 11:27:44" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\controller\pend_ctrl\local.var" LastWriteTime="2022-04-01 12:48:40" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\controller\pend_ctrl\pend_ctrl_lin.h" LastWriteTime="2022-04-01 12:07:32" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\controller\pend_ctrl\rtwtypes.h" LastWriteTime="2022-04-01 12:07:32" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\matlab_includes\r2019b\rtw_continuous.h" LastWriteTime="2019-11-06 16:21:44" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\matlab_includes\r2019b\rtw_solver.h" LastWriteTime="2019-11-06 16:21:44" />
+    <Prerequisite ID="c:\brautomation\as45\as\gnuinst\v4.1.2\i386-elf\include\bur\plctypes.h" LastWriteTime="2018-11-12 23:25:24" />
+    <Prerequisite ID="c:\brautomation\as45\as\gnuinst\v4.1.2\i386-elf\include\bur\plc.h" LastWriteTime="2018-11-12 23:25:24" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\controller\pend_ctrl\pend_ctrl_lin_types.h" LastWriteTime="2022-04-01 12:07:32" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\controller\pend_ctrl\pend_ctrl_lin_private.h" LastWriteTime="2022-04-01 12:07:32" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Logical\Controller\pend_ctrl\pend_ctrl_lin.c&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\PC\pend_ctrl\pend_ctrl_lin.c.o&quot; -T SG4 -M IA32 -B D4.52 -G V4.1.2  -s &quot;Controller.pend_ctrl&quot; -t &quot;$(AS_PROJECT_PATH)\Temp&quot; -specs=I386specs_brelf -I &quot;$(AS_PROJECT_PATH)\Logical\Controller\pend_ctrl&quot; &quot;$(AS_PROJECT_PATH)\Temp\Includes\Controller\pend_ctrl&quot; &quot;$(AS_PROJECT_PATH)\Temp\Includes\Controller&quot; &quot;$(AS_PROJECT_PATH)\Temp\Includes&quot; &quot;$(AS_PROJECT_PATH)\Logical\MATLAB_includes\R2019b&quot; -trigraphs -fno-asm -D _DEFAULT_INCLUDES -D _SG4 -fPIC -O2 -Wall -include &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\PC\Libraries.h&quot; -extOptions -lm -D MODEL=pend_ctrl_lin -D NUMST=1 -D NCSTATES=0 -D HAVESTDIO -D MODEL_HAS_DYNAMICALLY_LOADED_SFCNS=0 -D CLASSIC_INTERFACE=0 -D ALLOCATIONFCN=0 -D TID01EQ=0 -D TERMFCN=1 -D ONESTEPFCN=0 -D MAT_FILE=0 -D MULTI_INSTANCE_CODE=0 -D INTEGER_CODE=0 -D MT=0  -x c -P &quot;$(AS_PROJECT_PATH)&quot;" />
+    <AdditionalBuildTrigger Key="IecDeclarationsInAnsiC" Value="False" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\pend_ctrl\_bur_pvdef.c.o">
+    <Prerequisite ID="c:\brautomation\as45\as\gnuinst\v4.1.2\i386-elf\include\bur\_bur_pvdef.c" LastWriteTime="2018-11-12 23:25:24" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\pend_ctrl\pend_ctrl.c.o" LastWriteTime="2022-04-20 16:42:12" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\pend_ctrl\pend_ctrl_lin.c.o" LastWriteTime="2022-04-20 16:42:12" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\sys_lib\sys_lib.fun" LastWriteTime="2022-03-23 15:00:26" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\brsystem\brsystem.fun" LastWriteTime="2022-03-23 15:00:02" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\global.var" LastWriteTime="2022-04-07 11:27:44" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\controller\pend_ctrl\local.var" LastWriteTime="2022-04-01 12:48:40" />
+    <Prerequisite ID="c:\brautomation\as45\as\gnuinst\v4.1.2\i386-elf\include\bur\plctypes.h" LastWriteTime="2018-11-12 23:25:24" />
+    <Prerequisite ID="c:\brautomation\as45\as\gnuinst\v4.1.2\i386-elf\include\bur\plc.h" LastWriteTime="2018-11-12 23:25:24" />
+    <CommandLine Parameter="&quot;C:\BrAutomation\AS45\AS\GnuInst\V4.1.2\i386-elf\include\bur\_bur_pvdef.c&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\PC\pend_ctrl\_bur_pvdef.c.o&quot; -T SG4 -M IA32 -B D4.52 -G V4.1.2  -s &quot;Controller.pend_ctrl&quot; -t &quot;$(AS_PROJECT_PATH)\Temp&quot; -specs=I386specs_brelf -I &quot;$(AS_PROJECT_PATH)\Logical\Controller\pend_ctrl&quot; &quot;$(AS_PROJECT_PATH)\Temp\Includes\Controller\pend_ctrl&quot; &quot;$(AS_PROJECT_PATH)\Temp\Includes\Controller&quot; &quot;$(AS_PROJECT_PATH)\Temp\Includes&quot; &quot;$(AS_PROJECT_PATH)\Logical\MATLAB_includes\R2019b&quot; -trigraphs -fno-asm -D _DEFAULT_INCLUDES -D _SG4 -fPIC -O2 -Wall -include &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\PC\Libraries.h&quot; -extOptions -lm -D MODEL=pend_ctrl_lin -D NUMST=1 -D NCSTATES=0 -D HAVESTDIO -D MODEL_HAS_DYNAMICALLY_LOADED_SFCNS=0 -D CLASSIC_INTERFACE=0 -D ALLOCATIONFCN=0 -D TID01EQ=0 -D TERMFCN=1 -D ONESTEPFCN=0 -D MAT_FILE=0 -D MULTI_INSTANCE_CODE=0 -D INTEGER_CODE=0 -D MT=0  -x c -P &quot;$(AS_PROJECT_PATH)&quot;" />
+    <AdditionalBuildTrigger Key="IecDeclarationsInAnsiC" Value="False" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\pend_mod.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\pend_mod\pend_mod.ox" LastWriteTime="2022-04-20 16:42:12" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config1\pc\cpu.per" LastWriteTime="2022-03-23 14:50:04" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\sys_lib\sys_lib.fun" LastWriteTime="2022-03-23 15:00:26" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\brsystem\brsystem.fun" LastWriteTime="2022-03-23 15:00:02" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\global.var" LastWriteTime="2022-04-07 11:27:44" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\model\pend_mod\pend_mod.c" LastWriteTime="2022-04-14 21:37:46" />
+    <Prerequisite ID="c:\brautomation\as45\as\gnuinst\v4.1.2\i386-elf\include\bur\plctypes.h" LastWriteTime="2018-11-12 23:25:24" />
+    <Prerequisite ID="c:\brautomation\as45\as\gnuinst\v4.1.2\i386-elf\include\bur\plc.h" LastWriteTime="2018-11-12 23:25:24" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\model\pend_mod\pend_mod_nlin.h" LastWriteTime="2022-04-01 12:18:24" />
+    <Prerequisite ID="c:\brautomation\as45\as\gnuinst\v4.1.2\i386-elf\include\math.h" LastWriteTime="2018-11-12 23:25:24" />
+    <Prerequisite ID="c:\brautomation\as45\as\gnuinst\v4.1.2\i386-elf\include\sys\reent.h" LastWriteTime="2018-11-12 23:25:24" />
+    <Prerequisite ID="c:\brautomation\as45\as\gnuinst\v4.1.2\i386-elf\include\_ansi.h" LastWriteTime="2018-11-12 23:25:24" />
+    <Prerequisite ID="c:\brautomation\as45\as\gnuinst\v4.1.2\i386-elf\include\newlib.h" LastWriteTime="2018-11-12 23:25:24" />
+    <Prerequisite ID="c:\brautomation\as45\as\gnuinst\v4.1.2\i386-elf\include\sys\config.h" LastWriteTime="2018-11-12 23:25:24" />
+    <Prerequisite ID="c:\brautomation\as45\as\gnuinst\v4.1.2\i386-elf\include\machine\ieeefp.h" LastWriteTime="2018-11-12 23:25:24" />
+    <Prerequisite ID="c:\brautomation\as45\as\gnuinst\v4.1.2\i386-elf\include\sys\_types.h" LastWriteTime="2018-11-12 23:25:24" />
+    <Prerequisite ID="c:\brautomation\as45\as\gnuinst\v4.1.2\i386-elf\include\sys\lock.h" LastWriteTime="2018-11-12 23:25:24" />
+    <Prerequisite ID="c:\brautomation\as45\as\gnuinst\v4.1.2\lib\gcc\i386-elf\4.1.2\include\stddef.h" LastWriteTime="2018-11-12 23:25:24" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\model\pend_mod\rtwtypes.h" LastWriteTime="2022-04-01 12:18:24" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\matlab_includes\r2019b\rtw_continuous.h" LastWriteTime="2019-11-06 16:21:44" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\matlab_includes\r2019b\rtw_solver.h" LastWriteTime="2019-11-06 16:21:44" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\model\pend_mod\pend_mod_nlin_types.h" LastWriteTime="2022-04-01 12:18:16" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\PC\pend_mod\pend_mod.ox&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\PC\pend_mod.br&quot; -v V1.00.0 -f &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\PC\NT.ofs&quot; -offsetLT &quot;$(AS_PROJECT_PATH)\Binaries\Config1\PC\LT.ofs&quot; -T SG4 -M IA32 -B D4.52 -G V4.1.2  -extConstants -extOptions -lm -D MODEL=pend_mod_nlin -D NUMST=2 -D NCSTATES=4 -D HAVESTDIO -D MODEL_HAS_DYNAMICALLY_LOADED_SFCNS=0 -D CLASSIC_INTERFACE=0 -D ALLOCATIONFCN=0 -D TID01EQ=1 -D TERMFCN=1 -D ONESTEPFCN=0 -D MAT_FILE=0 -D MULTI_INSTANCE_CODE=0 -D INTEGER_CODE=0 -D MT=0  -r Cyclic1 -p 3 -s &quot;Model.pend_mod&quot; -L &quot;AsArLog: V*, AsIecCon: V*, AsTCP: V*, astime: V*, brsystem: V*, operator: V*, pctr_fun: V1.00.0, runtime: V*, sys_lib: V*&quot; -P &quot;$(AS_PROJECT_PATH)&quot; " />
+    <AdditionalBuildTrigger Key="VolatileMemory" Value="65535" />
+    <AdditionalBuildTrigger Key="PermanentAnalogMemory" Value="0" />
+    <AdditionalBuildTrigger Key="PermanentDigitalMemory" Value="0" />
+    <AdditionalBuildTrigger Key="RemanentMemory" Value="4096" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\pend_mod\pend_mod.ox">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\pend_mod\a.out" LastWriteTime="2022-04-20 16:42:12" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\sys_lib\sys_lib.fun" LastWriteTime="2022-03-23 15:00:26" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\brsystem\brsystem.fun" LastWriteTime="2022-03-23 15:00:02" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\global.var" LastWriteTime="2022-04-07 11:27:44" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\model\pend_mod\pend_mod.c" LastWriteTime="2022-04-14 21:37:46" />
+    <Prerequisite ID="c:\brautomation\as45\as\gnuinst\v4.1.2\i386-elf\include\bur\plctypes.h" LastWriteTime="2018-11-12 23:25:24" />
+    <Prerequisite ID="c:\brautomation\as45\as\gnuinst\v4.1.2\i386-elf\include\bur\plc.h" LastWriteTime="2018-11-12 23:25:24" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\model\pend_mod\pend_mod_nlin.h" LastWriteTime="2022-04-01 12:18:24" />
+    <Prerequisite ID="c:\brautomation\as45\as\gnuinst\v4.1.2\i386-elf\include\math.h" LastWriteTime="2018-11-12 23:25:24" />
+    <Prerequisite ID="c:\brautomation\as45\as\gnuinst\v4.1.2\i386-elf\include\sys\reent.h" LastWriteTime="2018-11-12 23:25:24" />
+    <Prerequisite ID="c:\brautomation\as45\as\gnuinst\v4.1.2\i386-elf\include\_ansi.h" LastWriteTime="2018-11-12 23:25:24" />
+    <Prerequisite ID="c:\brautomation\as45\as\gnuinst\v4.1.2\i386-elf\include\newlib.h" LastWriteTime="2018-11-12 23:25:24" />
+    <Prerequisite ID="c:\brautomation\as45\as\gnuinst\v4.1.2\i386-elf\include\sys\config.h" LastWriteTime="2018-11-12 23:25:24" />
+    <Prerequisite ID="c:\brautomation\as45\as\gnuinst\v4.1.2\i386-elf\include\machine\ieeefp.h" LastWriteTime="2018-11-12 23:25:24" />
+    <Prerequisite ID="c:\brautomation\as45\as\gnuinst\v4.1.2\i386-elf\include\sys\_types.h" LastWriteTime="2018-11-12 23:25:24" />
+    <Prerequisite ID="c:\brautomation\as45\as\gnuinst\v4.1.2\i386-elf\include\sys\lock.h" LastWriteTime="2018-11-12 23:25:24" />
+    <Prerequisite ID="c:\brautomation\as45\as\gnuinst\v4.1.2\lib\gcc\i386-elf\4.1.2\include\stddef.h" LastWriteTime="2018-11-12 23:25:24" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\model\pend_mod\rtwtypes.h" LastWriteTime="2022-04-01 12:18:24" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\matlab_includes\r2019b\rtw_continuous.h" LastWriteTime="2019-11-06 16:21:44" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\matlab_includes\r2019b\rtw_solver.h" LastWriteTime="2019-11-06 16:21:44" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\model\pend_mod\pend_mod_nlin_types.h" LastWriteTime="2022-04-01 12:18:16" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\PC\pend_mod\a.out&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\PC\pend_mod\pend_mod.ox&quot; -T SG4 -r Cyclic1 -extOptions -lm -D MODEL=pend_mod_nlin -D NUMST=2 -D NCSTATES=4 -D HAVESTDIO -D MODEL_HAS_DYNAMICALLY_LOADED_SFCNS=0 -D CLASSIC_INTERFACE=0 -D ALLOCATIONFCN=0 -D TID01EQ=1 -D TERMFCN=1 -D ONESTEPFCN=0 -D MAT_FILE=0 -D MULTI_INSTANCE_CODE=0 -D INTEGER_CODE=0 -D MT=0  -G V4.1.2  -B D4.52 " />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\pend_mod\a.out">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\pend_mod\pend_mod.c.o" LastWriteTime="2022-04-20 16:42:12" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\pend_mod\pend_mod_nlin.c.o" LastWriteTime="2022-04-20 16:42:12" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\pend_mod\_bur_pvdef.c.o" LastWriteTime="2022-04-20 16:42:12" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\sys_lib\sys_lib.fun" LastWriteTime="2022-03-23 15:00:26" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\brsystem\brsystem.fun" LastWriteTime="2022-03-23 15:00:02" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\global.var" LastWriteTime="2022-04-07 11:27:44" />
+    <CommandLine Parameter=" -link &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\PC\pend_mod\pend_mod.c.o&quot; &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\PC\pend_mod\pend_mod_nlin.c.o&quot; &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\PC\pend_mod\_bur_pvdef.c.o&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\PC\pend_mod\a.out&quot; -G V4.1.2  -T SG4 -M IA32 &quot;-Wl,$(AS_PROJECT_PATH)\Temp\Archives\Config1\PC\libpctr_fun.a&quot; &quot;-Wl,C:\BrAutomation\AS\System\D0452\SG4\IA32\libAsIecCon.a&quot; &quot;-Wl,C:\BrAutomation\AS\System\D0452\SG4\IA32\libAsTCP.a&quot; &quot;-Wl,C:\BrAutomation\AS\System\D0452\SG4\IA32\libAsArLog.a&quot; &quot;-Wl,C:\BrAutomation\AS\System\D0452\SG4\IA32\libsys_lib.a&quot; &quot;-Wl,C:\BrAutomation\AS\System\D0452\SG4\IA32\libbrsystem.a&quot; &quot;-Wl,C:\BrAutomation\AS\System\D0452\SG4\IA32\libastime.a&quot; &quot;-Wl,C:\BrAutomation\AS\System\D0452\SG4\IA32\libruntime.a&quot; &quot;-Wl,C:\BrAutomation\AS\System\D0452\SG4\IA32\liboperator.a&quot; -specs=I386specs_brelf -extOptions -lm -D MODEL=pend_mod_nlin -D NUMST=2 -D NCSTATES=4 -D HAVESTDIO -D MODEL_HAS_DYNAMICALLY_LOADED_SFCNS=0 -D CLASSIC_INTERFACE=0 -D ALLOCATIONFCN=0 -D TID01EQ=1 -D TERMFCN=1 -D ONESTEPFCN=0 -D MAT_FILE=0 -D MULTI_INSTANCE_CODE=0 -D INTEGER_CODE=0 -D MT=0 " />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\pend_mod\pend_mod.c.o">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\model\pend_mod\pend_mod.c" LastWriteTime="2022-04-14 21:37:46" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\sys_lib\sys_lib.fun" LastWriteTime="2022-03-23 15:00:26" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\brsystem\brsystem.fun" LastWriteTime="2022-03-23 15:00:02" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\global.var" LastWriteTime="2022-04-07 11:27:44" />
+    <Prerequisite ID="c:\brautomation\as45\as\gnuinst\v4.1.2\i386-elf\include\bur\plctypes.h" LastWriteTime="2018-11-12 23:25:24" />
+    <Prerequisite ID="c:\brautomation\as45\as\gnuinst\v4.1.2\i386-elf\include\bur\plc.h" LastWriteTime="2018-11-12 23:25:24" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\model\pend_mod\pend_mod_nlin.h" LastWriteTime="2022-04-01 12:18:24" />
+    <Prerequisite ID="c:\brautomation\as45\as\gnuinst\v4.1.2\i386-elf\include\math.h" LastWriteTime="2018-11-12 23:25:24" />
+    <Prerequisite ID="c:\brautomation\as45\as\gnuinst\v4.1.2\i386-elf\include\sys\reent.h" LastWriteTime="2018-11-12 23:25:24" />
+    <Prerequisite ID="c:\brautomation\as45\as\gnuinst\v4.1.2\i386-elf\include\_ansi.h" LastWriteTime="2018-11-12 23:25:24" />
+    <Prerequisite ID="c:\brautomation\as45\as\gnuinst\v4.1.2\i386-elf\include\newlib.h" LastWriteTime="2018-11-12 23:25:24" />
+    <Prerequisite ID="c:\brautomation\as45\as\gnuinst\v4.1.2\i386-elf\include\sys\config.h" LastWriteTime="2018-11-12 23:25:24" />
+    <Prerequisite ID="c:\brautomation\as45\as\gnuinst\v4.1.2\i386-elf\include\machine\ieeefp.h" LastWriteTime="2018-11-12 23:25:24" />
+    <Prerequisite ID="c:\brautomation\as45\as\gnuinst\v4.1.2\i386-elf\include\sys\_types.h" LastWriteTime="2018-11-12 23:25:24" />
+    <Prerequisite ID="c:\brautomation\as45\as\gnuinst\v4.1.2\i386-elf\include\sys\lock.h" LastWriteTime="2018-11-12 23:25:24" />
+    <Prerequisite ID="c:\brautomation\as45\as\gnuinst\v4.1.2\lib\gcc\i386-elf\4.1.2\include\stddef.h" LastWriteTime="2018-11-12 23:25:24" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\model\pend_mod\rtwtypes.h" LastWriteTime="2022-04-01 12:18:24" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\matlab_includes\r2019b\rtw_continuous.h" LastWriteTime="2019-11-06 16:21:44" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\matlab_includes\r2019b\rtw_solver.h" LastWriteTime="2019-11-06 16:21:44" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\model\pend_mod\pend_mod_nlin_types.h" LastWriteTime="2022-04-01 12:18:16" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Logical\Model\pend_mod\pend_mod.c&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\PC\pend_mod\pend_mod.c.o&quot; -T SG4 -M IA32 -B D4.52 -G V4.1.2  -s &quot;Model.pend_mod&quot; -t &quot;$(AS_PROJECT_PATH)\Temp&quot; -specs=I386specs_brelf -I &quot;$(AS_PROJECT_PATH)\Logical\Model\pend_mod&quot; &quot;$(AS_PROJECT_PATH)\Temp\Includes\Model\pend_mod&quot; &quot;$(AS_PROJECT_PATH)\Temp\Includes\Model&quot; &quot;$(AS_PROJECT_PATH)\Temp\Includes&quot; &quot;$(AS_PROJECT_PATH)\Logical\MATLAB_includes\R2019b&quot; -trigraphs -fno-asm -D _DEFAULT_INCLUDES -D _SG4 -fPIC -O2 -Wall -include &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\PC\Libraries.h&quot; -extOptions -lm -D MODEL=pend_mod_nlin -D NUMST=2 -D NCSTATES=4 -D HAVESTDIO -D MODEL_HAS_DYNAMICALLY_LOADED_SFCNS=0 -D CLASSIC_INTERFACE=0 -D ALLOCATIONFCN=0 -D TID01EQ=1 -D TERMFCN=1 -D ONESTEPFCN=0 -D MAT_FILE=0 -D MULTI_INSTANCE_CODE=0 -D INTEGER_CODE=0 -D MT=0  -x c -P &quot;$(AS_PROJECT_PATH)&quot;" />
+    <AdditionalBuildTrigger Key="IecDeclarationsInAnsiC" Value="False" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\pend_mod\pend_mod_nlin.c.o">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\model\pend_mod\pend_mod_nlin.c" LastWriteTime="2022-04-01 12:18:16" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\sys_lib\sys_lib.fun" LastWriteTime="2022-03-23 15:00:26" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\brsystem\brsystem.fun" LastWriteTime="2022-03-23 15:00:02" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\global.var" LastWriteTime="2022-04-07 11:27:44" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\model\pend_mod\pend_mod_nlin.h" LastWriteTime="2022-04-01 12:18:24" />
+    <Prerequisite ID="c:\brautomation\as45\as\gnuinst\v4.1.2\i386-elf\include\math.h" LastWriteTime="2018-11-12 23:25:24" />
+    <Prerequisite ID="c:\brautomation\as45\as\gnuinst\v4.1.2\i386-elf\include\sys\reent.h" LastWriteTime="2018-11-12 23:25:24" />
+    <Prerequisite ID="c:\brautomation\as45\as\gnuinst\v4.1.2\i386-elf\include\_ansi.h" LastWriteTime="2018-11-12 23:25:24" />
+    <Prerequisite ID="c:\brautomation\as45\as\gnuinst\v4.1.2\i386-elf\include\newlib.h" LastWriteTime="2018-11-12 23:25:24" />
+    <Prerequisite ID="c:\brautomation\as45\as\gnuinst\v4.1.2\i386-elf\include\sys\config.h" LastWriteTime="2018-11-12 23:25:24" />
+    <Prerequisite ID="c:\brautomation\as45\as\gnuinst\v4.1.2\i386-elf\include\machine\ieeefp.h" LastWriteTime="2018-11-12 23:25:24" />
+    <Prerequisite ID="c:\brautomation\as45\as\gnuinst\v4.1.2\i386-elf\include\sys\_types.h" LastWriteTime="2018-11-12 23:25:24" />
+    <Prerequisite ID="c:\brautomation\as45\as\gnuinst\v4.1.2\i386-elf\include\sys\lock.h" LastWriteTime="2018-11-12 23:25:24" />
+    <Prerequisite ID="c:\brautomation\as45\as\gnuinst\v4.1.2\lib\gcc\i386-elf\4.1.2\include\stddef.h" LastWriteTime="2018-11-12 23:25:24" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\model\pend_mod\rtwtypes.h" LastWriteTime="2022-04-01 12:18:24" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\matlab_includes\r2019b\rtw_continuous.h" LastWriteTime="2019-11-06 16:21:44" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\matlab_includes\r2019b\rtw_solver.h" LastWriteTime="2019-11-06 16:21:44" />
+    <Prerequisite ID="c:\brautomation\as45\as\gnuinst\v4.1.2\i386-elf\include\bur\plctypes.h" LastWriteTime="2018-11-12 23:25:24" />
+    <Prerequisite ID="c:\brautomation\as45\as\gnuinst\v4.1.2\i386-elf\include\bur\plc.h" LastWriteTime="2018-11-12 23:25:24" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\model\pend_mod\pend_mod_nlin_types.h" LastWriteTime="2022-04-01 12:18:16" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\model\pend_mod\pend_mod_nlin_private.h" LastWriteTime="2022-04-01 12:18:16" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Logical\Model\pend_mod\pend_mod_nlin.c&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\PC\pend_mod\pend_mod_nlin.c.o&quot; -T SG4 -M IA32 -B D4.52 -G V4.1.2  -s &quot;Model.pend_mod&quot; -t &quot;$(AS_PROJECT_PATH)\Temp&quot; -specs=I386specs_brelf -I &quot;$(AS_PROJECT_PATH)\Logical\Model\pend_mod&quot; &quot;$(AS_PROJECT_PATH)\Temp\Includes\Model\pend_mod&quot; &quot;$(AS_PROJECT_PATH)\Temp\Includes\Model&quot; &quot;$(AS_PROJECT_PATH)\Temp\Includes&quot; &quot;$(AS_PROJECT_PATH)\Logical\MATLAB_includes\R2019b&quot; -trigraphs -fno-asm -D _DEFAULT_INCLUDES -D _SG4 -fPIC -O2 -Wall -include &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\PC\Libraries.h&quot; -extOptions -lm -D MODEL=pend_mod_nlin -D NUMST=2 -D NCSTATES=4 -D HAVESTDIO -D MODEL_HAS_DYNAMICALLY_LOADED_SFCNS=0 -D CLASSIC_INTERFACE=0 -D ALLOCATIONFCN=0 -D TID01EQ=1 -D TERMFCN=1 -D ONESTEPFCN=0 -D MAT_FILE=0 -D MULTI_INSTANCE_CODE=0 -D INTEGER_CODE=0 -D MT=0  -x c -P &quot;$(AS_PROJECT_PATH)&quot;" />
+    <AdditionalBuildTrigger Key="IecDeclarationsInAnsiC" Value="False" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\pend_mod\_bur_pvdef.c.o">
+    <Prerequisite ID="c:\brautomation\as45\as\gnuinst\v4.1.2\i386-elf\include\bur\_bur_pvdef.c" LastWriteTime="2018-11-12 23:25:24" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\pend_mod\pend_mod.c.o" LastWriteTime="2022-04-20 16:42:12" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\pend_mod\pend_mod_nlin.c.o" LastWriteTime="2022-04-20 16:42:12" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\sys_lib\sys_lib.fun" LastWriteTime="2022-03-23 15:00:26" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\brsystem\brsystem.fun" LastWriteTime="2022-03-23 15:00:02" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\global.var" LastWriteTime="2022-04-07 11:27:44" />
+    <Prerequisite ID="c:\brautomation\as45\as\gnuinst\v4.1.2\i386-elf\include\bur\plctypes.h" LastWriteTime="2018-11-12 23:25:24" />
+    <Prerequisite ID="c:\brautomation\as45\as\gnuinst\v4.1.2\i386-elf\include\bur\plc.h" LastWriteTime="2018-11-12 23:25:24" />
+    <CommandLine Parameter="&quot;C:\BrAutomation\AS45\AS\GnuInst\V4.1.2\i386-elf\include\bur\_bur_pvdef.c&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\PC\pend_mod\_bur_pvdef.c.o&quot; -T SG4 -M IA32 -B D4.52 -G V4.1.2  -s &quot;Model.pend_mod&quot; -t &quot;$(AS_PROJECT_PATH)\Temp&quot; -specs=I386specs_brelf -I &quot;$(AS_PROJECT_PATH)\Logical\Model\pend_mod&quot; &quot;$(AS_PROJECT_PATH)\Temp\Includes\Model\pend_mod&quot; &quot;$(AS_PROJECT_PATH)\Temp\Includes\Model&quot; &quot;$(AS_PROJECT_PATH)\Temp\Includes&quot; &quot;$(AS_PROJECT_PATH)\Logical\MATLAB_includes\R2019b&quot; -trigraphs -fno-asm -D _DEFAULT_INCLUDES -D _SG4 -fPIC -O2 -Wall -include &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\PC\Libraries.h&quot; -extOptions -lm -D MODEL=pend_mod_nlin -D NUMST=2 -D NCSTATES=4 -D HAVESTDIO -D MODEL_HAS_DYNAMICALLY_LOADED_SFCNS=0 -D CLASSIC_INTERFACE=0 -D ALLOCATIONFCN=0 -D TID01EQ=1 -D TERMFCN=1 -D ONESTEPFCN=0 -D MAT_FILE=0 -D MULTI_INSTANCE_CODE=0 -D INTEGER_CODE=0 -D MT=0  -x c -P &quot;$(AS_PROJECT_PATH)&quot;" />
+    <AdditionalBuildTrigger Key="IecDeclarationsInAnsiC" Value="False" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\brsystem.br">
+    <Prerequisite ID="c:\brautomation\as\system\d0452\sg4\ia32\brsystem.br" LastWriteTime="2018-12-06 08:00:48" />
+    <CommandLine Parameter="/c copy /B /Y &quot;C:\BrAutomation\AS\System\D0452\SG4\IA32\brsystem.br&quot; &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\PC\brsystem.br&quot; &gt; nul" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\runtime.br">
+    <Prerequisite ID="c:\brautomation\as\system\d0452\sg4\ia32\runtime.br" LastWriteTime="2018-12-06 08:00:52" />
+    <CommandLine Parameter="/c copy /B /Y &quot;C:\BrAutomation\AS\System\D0452\SG4\IA32\runtime.br&quot; &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\PC\runtime.br&quot; &gt; nul" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\sys_lib.br">
+    <Prerequisite ID="c:\brautomation\as\system\d0452\sg4\ia32\sys_lib.br" LastWriteTime="2018-12-06 08:00:52" />
+    <CommandLine Parameter="/c copy /B /Y &quot;C:\BrAutomation\AS\System\D0452\SG4\IA32\sys_lib.br&quot; &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\PC\sys_lib.br&quot; &gt; nul" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\astcp.br">
+    <Prerequisite ID="c:\brautomation\as\system\d0452\sg4\ia32\astcp.br" LastWriteTime="2018-12-06 08:00:48" />
+    <CommandLine Parameter="/c copy /B /Y &quot;C:\BrAutomation\AS\System\D0452\SG4\IA32\AsTCP.br&quot; &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\PC\AsTCP.br&quot; &gt; nul" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\asarlog.br">
+    <Prerequisite ID="c:\brautomation\as\system\d0452\sg4\ia32\asarlog.br" LastWriteTime="2018-12-06 08:00:38" />
+    <CommandLine Parameter="/c copy /B /Y &quot;C:\BrAutomation\AS\System\D0452\SG4\IA32\AsArLog.br&quot; &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\PC\AsArLog.br&quot; &gt; nul" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\pctr_fun.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\pctr_fun\pctr_fun.ox" LastWriteTime="2022-04-20 16:42:12" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\pctr_fun\ansic.lby" LastWriteTime="2022-04-04 16:50:30" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\pctr_fun\pctr_fun.fun" LastWriteTime="2022-04-04 16:50:30" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\pctr_fun\pctr_fun.typ" LastWriteTime="2022-04-04 16:50:14" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\PC\pctr_fun\pctr_fun.ox&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\PC\pctr_fun.br&quot; -v V1.00.0 -f &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\PC\NT.ofs&quot; -offsetLT &quot;$(AS_PROJECT_PATH)\Binaries\Config1\PC\LT.ofs&quot; -T SG4 -M IA32 -B D4.52 -G V4.1.2  -extConstants -extOptions -lm -D MODEL=pend_ctrl_fun -D NUMST=1 -D NCSTATES=0 -D HAVESTDIO -D MODEL_HAS_DYNAMICALLY_LOADED_SFCNS=0 -D CLASSIC_INTERFACE=0 -D ALLOCATIONFCN=0 -D TID01EQ=0 -D TERMFCN=1 -D ONESTEPFCN=1 -D MAT_FILE=0 -D MULTI_INSTANCE_CODE=1 -D INTEGER_CODE=0 -D MT=0  -r Library -s &quot;Libraries.pctr_fun&quot; -L &quot;AsArLog: V*, AsIecCon: V*, AsTCP: V*, astime: V*, brsystem: V*, operator: V*, pctr_fun: V1.00.0, runtime: V*, sys_lib: V*&quot; -P &quot;$(AS_PROJECT_PATH)&quot; " />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\pctr_fun\pctr_fun.ox">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\pctr_fun\a.out" LastWriteTime="2022-04-20 16:42:12" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\pctr_fun\pctr_fun.fun" LastWriteTime="2022-04-04 16:50:30" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\pctr_fun\pctr_fun.typ" LastWriteTime="2022-04-04 16:50:14" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\PC\pctr_fun\a.out&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\PC\pctr_fun\pctr_fun.ox&quot; -T SG4 -r Library -extOptions -lm -D MODEL=pend_ctrl_fun -D NUMST=1 -D NCSTATES=0 -D HAVESTDIO -D MODEL_HAS_DYNAMICALLY_LOADED_SFCNS=0 -D CLASSIC_INTERFACE=0 -D ALLOCATIONFCN=0 -D TID01EQ=0 -D TERMFCN=1 -D ONESTEPFCN=1 -D MAT_FILE=0 -D MULTI_INSTANCE_CODE=1 -D INTEGER_CODE=0 -D MT=0  -G V4.1.2  -B D4.52 " />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\pctr_fun\a.out">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\pctr_fun\pctrfub.c.o" LastWriteTime="2022-04-20 16:42:12" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\pctr_fun\pend_ctrl_fun.c.o" LastWriteTime="2022-04-20 16:42:12" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\pctr_fun\pctr_fun.fun" LastWriteTime="2022-04-04 16:50:30" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\pctr_fun\pctr_fun.typ" LastWriteTime="2022-04-04 16:50:14" />
+    <CommandLine Parameter=" -link &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\PC\pctr_fun\pctrFub.c.o&quot; &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\PC\pctr_fun\pend_ctrl_fun.c.o&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\PC\pctr_fun\a.out&quot; &quot;-Wl,--version-script=$(AS_PROJECT_PATH)\Temp\Archives\Config1\PC\libpctr_fun.expmap&quot; -G V4.1.2  -T SG4 -M IA32 &quot;-Wl,C:\BrAutomation\AS\System\D0452\SG4\IA32\libAsIecCon.a&quot; &quot;-Wl,C:\BrAutomation\AS\System\D0452\SG4\IA32\libAsTCP.a&quot; &quot;-Wl,C:\BrAutomation\AS\System\D0452\SG4\IA32\libAsArLog.a&quot; &quot;-Wl,C:\BrAutomation\AS\System\D0452\SG4\IA32\libsys_lib.a&quot; &quot;-Wl,C:\BrAutomation\AS\System\D0452\SG4\IA32\libbrsystem.a&quot; &quot;-Wl,C:\BrAutomation\AS\System\D0452\SG4\IA32\libastime.a&quot; &quot;-Wl,C:\BrAutomation\AS\System\D0452\SG4\IA32\libruntime.a&quot; &quot;-Wl,C:\BrAutomation\AS\System\D0452\SG4\IA32\liboperator.a&quot; -specs=I386specs_brelf -extOptions -lm -D MODEL=pend_ctrl_fun -D NUMST=1 -D NCSTATES=0 -D HAVESTDIO -D MODEL_HAS_DYNAMICALLY_LOADED_SFCNS=0 -D CLASSIC_INTERFACE=0 -D ALLOCATIONFCN=0 -D TID01EQ=0 -D TERMFCN=1 -D ONESTEPFCN=1 -D MAT_FILE=0 -D MULTI_INSTANCE_CODE=1 -D INTEGER_CODE=0 -D MT=0 " />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\pctr_fun\pctrfub.c.o">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\pctr_fun\pctrfub.c" LastWriteTime="2022-04-04 16:50:14" />
+    <Prerequisite ID="c:\brautomation\as45\as\gnuinst\v4.1.2\i386-elf\include\bur\plctypes.h" LastWriteTime="2018-11-12 23:25:24" />
+    <Prerequisite ID="c:\brautomation\as45\as\gnuinst\v4.1.2\i386-elf\include\bur\plc.h" LastWriteTime="2018-11-12 23:25:24" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\pctr_fun\pend_ctrl_fun.h" LastWriteTime="2022-04-04 16:50:14" />
+    <Prerequisite ID="c:\brautomation\as45\as\gnuinst\v4.1.2\i386-elf\include\math.h" LastWriteTime="2018-11-12 23:25:24" />
+    <Prerequisite ID="c:\brautomation\as45\as\gnuinst\v4.1.2\i386-elf\include\sys\reent.h" LastWriteTime="2018-11-12 23:25:24" />
+    <Prerequisite ID="c:\brautomation\as45\as\gnuinst\v4.1.2\i386-elf\include\_ansi.h" LastWriteTime="2018-11-12 23:25:24" />
+    <Prerequisite ID="c:\brautomation\as45\as\gnuinst\v4.1.2\i386-elf\include\newlib.h" LastWriteTime="2018-11-12 23:25:24" />
+    <Prerequisite ID="c:\brautomation\as45\as\gnuinst\v4.1.2\i386-elf\include\sys\config.h" LastWriteTime="2018-11-12 23:25:24" />
+    <Prerequisite ID="c:\brautomation\as45\as\gnuinst\v4.1.2\i386-elf\include\machine\ieeefp.h" LastWriteTime="2018-11-12 23:25:24" />
+    <Prerequisite ID="c:\brautomation\as45\as\gnuinst\v4.1.2\i386-elf\include\sys\_types.h" LastWriteTime="2018-11-12 23:25:24" />
+    <Prerequisite ID="c:\brautomation\as45\as\gnuinst\v4.1.2\i386-elf\include\sys\lock.h" LastWriteTime="2018-11-12 23:25:24" />
+    <Prerequisite ID="c:\brautomation\as45\as\gnuinst\v4.1.2\lib\gcc\i386-elf\4.1.2\include\stddef.h" LastWriteTime="2018-11-12 23:25:24" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\pctr_fun\rtwtypes.h" LastWriteTime="2022-04-04 16:50:14" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\pctr_fun\pend_ctrl_fun_types.h" LastWriteTime="2022-04-04 16:50:14" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\includes\pctr_fun.h" LastWriteTime="2022-04-04 17:14:14" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\pctr_fun\rt_defines.h" LastWriteTime="2022-04-04 16:50:14" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Logical\Libraries\pctr_fun\pctrFub.c&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\PC\pctr_fun\pctrFub.c.o&quot; -T SG4 -M IA32 -B D4.52 -G V4.1.2  -s &quot;Libraries.pctr_fun&quot; -t &quot;$(AS_PROJECT_PATH)\Temp&quot; -specs=I386specs_brelf -r Library -I &quot;$(AS_PROJECT_PATH)\Logical\Libraries\pctr_fun&quot; &quot;$(AS_PROJECT_PATH)\Temp\Includes\Libraries\pctr_fun&quot; &quot;$(AS_PROJECT_PATH)\Temp\Includes&quot; &quot;$(AS_PROJECT_PATH)\Logical\MATLAB_includes\R2019b&quot; -trigraphs -fno-asm -D _DEFAULT_INCLUDES -D _SG4 -fPIC -O2 -Wall -include &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\PC\Libraries.h&quot; -D _PCTR_FUN_EXPORT -extOptions -lm -D MODEL=pend_ctrl_fun -D NUMST=1 -D NCSTATES=0 -D HAVESTDIO -D MODEL_HAS_DYNAMICALLY_LOADED_SFCNS=0 -D CLASSIC_INTERFACE=0 -D ALLOCATIONFCN=0 -D TID01EQ=0 -D TERMFCN=1 -D ONESTEPFCN=1 -D MAT_FILE=0 -D MULTI_INSTANCE_CODE=1 -D INTEGER_CODE=0 -D MT=0  -x c -P &quot;$(AS_PROJECT_PATH)&quot;" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\pctr_fun\pend_ctrl_fun.c.o">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\pctr_fun\pend_ctrl_fun.c" LastWriteTime="2022-04-04 16:50:14" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\pctr_fun\pend_ctrl_fun.h" LastWriteTime="2022-04-04 16:50:14" />
+    <Prerequisite ID="c:\brautomation\as45\as\gnuinst\v4.1.2\i386-elf\include\math.h" LastWriteTime="2018-11-12 23:25:24" />
+    <Prerequisite ID="c:\brautomation\as45\as\gnuinst\v4.1.2\i386-elf\include\sys\reent.h" LastWriteTime="2018-11-12 23:25:24" />
+    <Prerequisite ID="c:\brautomation\as45\as\gnuinst\v4.1.2\i386-elf\include\_ansi.h" LastWriteTime="2018-11-12 23:25:24" />
+    <Prerequisite ID="c:\brautomation\as45\as\gnuinst\v4.1.2\i386-elf\include\newlib.h" LastWriteTime="2018-11-12 23:25:24" />
+    <Prerequisite ID="c:\brautomation\as45\as\gnuinst\v4.1.2\i386-elf\include\sys\config.h" LastWriteTime="2018-11-12 23:25:24" />
+    <Prerequisite ID="c:\brautomation\as45\as\gnuinst\v4.1.2\i386-elf\include\machine\ieeefp.h" LastWriteTime="2018-11-12 23:25:24" />
+    <Prerequisite ID="c:\brautomation\as45\as\gnuinst\v4.1.2\i386-elf\include\sys\_types.h" LastWriteTime="2018-11-12 23:25:24" />
+    <Prerequisite ID="c:\brautomation\as45\as\gnuinst\v4.1.2\i386-elf\include\sys\lock.h" LastWriteTime="2018-11-12 23:25:24" />
+    <Prerequisite ID="c:\brautomation\as45\as\gnuinst\v4.1.2\lib\gcc\i386-elf\4.1.2\include\stddef.h" LastWriteTime="2018-11-12 23:25:24" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\pctr_fun\rtwtypes.h" LastWriteTime="2022-04-04 16:50:14" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\pctr_fun\pend_ctrl_fun_types.h" LastWriteTime="2022-04-04 16:50:14" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\includes\pctr_fun.h" LastWriteTime="2022-04-04 17:14:14" />
+    <Prerequisite ID="c:\brautomation\as45\as\gnuinst\v4.1.2\i386-elf\include\bur\plctypes.h" LastWriteTime="2018-11-12 23:25:24" />
+    <Prerequisite ID="c:\brautomation\as45\as\gnuinst\v4.1.2\i386-elf\include\bur\plc.h" LastWriteTime="2018-11-12 23:25:24" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\pctr_fun\rt_defines.h" LastWriteTime="2022-04-04 16:50:14" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\pctr_fun\pend_ctrl_fun_private.h" LastWriteTime="2022-04-04 16:50:14" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Logical\Libraries\pctr_fun\pend_ctrl_fun.c&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\PC\pctr_fun\pend_ctrl_fun.c.o&quot; -T SG4 -M IA32 -B D4.52 -G V4.1.2  -s &quot;Libraries.pctr_fun&quot; -t &quot;$(AS_PROJECT_PATH)\Temp&quot; -specs=I386specs_brelf -r Library -I &quot;$(AS_PROJECT_PATH)\Logical\Libraries\pctr_fun&quot; &quot;$(AS_PROJECT_PATH)\Temp\Includes\Libraries\pctr_fun&quot; &quot;$(AS_PROJECT_PATH)\Temp\Includes&quot; &quot;$(AS_PROJECT_PATH)\Logical\MATLAB_includes\R2019b&quot; -trigraphs -fno-asm -D _DEFAULT_INCLUDES -D _SG4 -fPIC -O2 -Wall -include &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\PC\Libraries.h&quot; -D _PCTR_FUN_EXPORT -extOptions -lm -D MODEL=pend_ctrl_fun -D NUMST=1 -D NCSTATES=0 -D HAVESTDIO -D MODEL_HAS_DYNAMICALLY_LOADED_SFCNS=0 -D CLASSIC_INTERFACE=0 -D ALLOCATIONFCN=0 -D TID01EQ=0 -D TERMFCN=1 -D ONESTEPFCN=1 -D MAT_FILE=0 -D MULTI_INSTANCE_CODE=1 -D INTEGER_CODE=0 -D MT=0  -x c -P &quot;$(AS_PROJECT_PATH)&quot;" />
+  </Rule>
+  <Rule ID="#cpu_tp.mak">
+    <CommandLine Parameter=" -r -f &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\PC\#cpu_tp.mak&quot; -k" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\binaries\config1\pc\transfer.lst">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\iomap.br" LastWriteTime="2022-04-20 16:42:16" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\opcuamap.br" LastWriteTime="2022-04-20 16:42:16" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\ashwac.br" LastWriteTime="2022-04-20 16:42:14" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\sysconf.br" LastWriteTime="2022-04-20 16:42:14" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\asfw.br" LastWriteTime="2022-04-20 16:42:14" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\ashwd.br" LastWriteTime="2022-04-20 16:42:14" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\arconfig.br" LastWriteTime="2022-04-20 16:42:14" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\udbdef.br" LastWriteTime="2018-11-12 23:25:24" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\tcdata.br" LastWriteTime="2022-04-20 16:42:18" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\role.br" LastWriteTime="2022-04-20 16:42:14" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\user.br" LastWriteTime="2022-04-20 16:42:14" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\pend_ctrl.br" LastWriteTime="2022-04-20 16:42:14" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\pend_mod.br" LastWriteTime="2022-04-20 16:42:14" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\brsystem.br" LastWriteTime="2018-12-06 08:00:48" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\runtime.br" LastWriteTime="2018-12-06 08:00:52" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\sys_lib.br" LastWriteTime="2018-12-06 08:00:52" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\astcp.br" LastWriteTime="2018-12-06 08:00:48" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\asarlog.br" LastWriteTime="2018-12-06 08:00:38" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\pctr_fun.br" LastWriteTime="2022-04-20 16:42:12" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config1\pc\cpu.sw" LastWriteTime="2022-04-04 21:53:24" />
+    <CommandLine Parameter=" &quot;$(AS_PROJECT_PATH)\AS_Target_Simulink_Test.apj&quot; -t &quot;$(AS_PROJECT_PATH)\Temp&quot; -o &quot;$(AS_PROJECT_PATH)\Binaries&quot; -c &quot;Config1&quot; -i &quot;C:\BrAutomation\AS45&quot; -S &quot;PC&quot; -A &quot;AR000&quot; -pil -swFiles &quot;$(AS_PROJECT_PATH)\Physical\Config1\PC\Cpu.sw&quot; -Z &quot;UnitSystem: n.d, TextSystem: n.d, ProgrammingSystem: n.d, Connectivity: n.d, AAS: n.d&quot; -C &quot;/RT=1000 /AM=*&quot; -D &quot;/IF=COM1 /BD=57600 /PA=2 /IT=20 /RS=0&quot; -M IA32 -T SG4" />
+  </Rule>
+</RuleSetOptions>
