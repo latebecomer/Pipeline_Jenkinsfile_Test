@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-            bat 'Z:\HYEONGJUN KIM\Hyundai_Heavy_Industry\CI_script_for_AS\ci-as-build-scripts-master\scripts\Echo.bat Building...'
+            bat 'Z:/HYEONGJUN KIM\Hyundai_Heavy_Industry/CI_script_for_AS/ci-as-build-scripts-master/scripts/Echo.bat Building...'
             bat 'Z:\HYEONGJUN KIM\Hyundai_Heavy_Industry\CI_script_for_AS\ci-as-build-scripts-master\scripts\Build.py'   
             }
         }
