@@ -9,9 +9,9 @@
       Source="Controller.pend_ctrl"
       Language="ANSIC">
       <File
-        Path="Z:\HYEONGJUN KIM\Hyundai_Heavy_Industry\BR_Projects\AS_Target_Simulink_Test\Logical\Controller\pend_ctrl\local.typ" />
+        Path="Z:\HYEONGJUN KIM\Hyundai_Heavy_Industry\BR_Projects\AS_Target_Simulink_Test_Jenkins\Logical\Controller\pend_ctrl\local.typ" />
       <File
-        Path="Z:\HYEONGJUN KIM\Hyundai_Heavy_Industry\BR_Projects\AS_Target_Simulink_Test\Logical\Controller\pend_ctrl\local.var" />
+        Path="Z:\HYEONGJUN KIM\Hyundai_Heavy_Industry\BR_Projects\AS_Target_Simulink_Test_Jenkins\Logical\Controller\pend_ctrl\local.var" />
     </Task>
     <Task
       Name="pend_mod"
@@ -19,9 +19,9 @@
       Source="Model.pend_mod"
       Language="ANSIC">
       <File
-        Path="Z:\HYEONGJUN KIM\Hyundai_Heavy_Industry\BR_Projects\AS_Target_Simulink_Test\Logical\Model\pend_mod\local.typ" />
+        Path="Z:\HYEONGJUN KIM\Hyundai_Heavy_Industry\BR_Projects\AS_Target_Simulink_Test_Jenkins\Logical\Model\pend_mod\local.typ" />
       <File
-        Path="Z:\HYEONGJUN KIM\Hyundai_Heavy_Industry\BR_Projects\AS_Target_Simulink_Test\Logical\Model\pend_mod\local.var" />
+        Path="Z:\HYEONGJUN KIM\Hyundai_Heavy_Industry\BR_Projects\AS_Target_Simulink_Test_Jenkins\Logical\Model\pend_mod\local.var" />
     </Task>
   </TaskClass>
   <TaskClass

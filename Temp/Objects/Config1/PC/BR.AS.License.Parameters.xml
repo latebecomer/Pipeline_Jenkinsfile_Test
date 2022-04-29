@@ -5,10 +5,10 @@
     <ConnectionParameters>/RT=1000 /AM=*</ConnectionParameters>
   </Connection>
   <AsProject>
-    <ApjFullFileName>Z:\HYEONGJUN KIM\Hyundai_Heavy_Industry\BR_Projects\AS_Target_Simulink_Test\AS_Target_Simulink_Test.apj</ApjFullFileName>
+    <ApjFullFileName>Z:\HYEONGJUN KIM\Hyundai_Heavy_Industry\BR_Projects\AS_Target_Simulink_Test_Jenkins\AS_Target_Simulink_Test.apj</ApjFullFileName>
     <ProjectName>AS_Target_Simulink_Test</ProjectName>
     <ActiveConfigurationName>Config1</ActiveConfigurationName>
-    <LicenseDataFolder>Z:\HYEONGJUN KIM\Hyundai_Heavy_Industry\BR_Projects\AS_Target_Simulink_Test\Temp\Objects\Config1\PC</LicenseDataFolder>
+    <LicenseDataFolder>Z:\HYEONGJUN KIM\Hyundai_Heavy_Industry\BR_Projects\AS_Target_Simulink_Test_Jenkins\Temp\Objects\Config1\PC</LicenseDataFolder>
   </AsProject>
   <General>
     <DeleteParameterFile>false</DeleteParameterFile>

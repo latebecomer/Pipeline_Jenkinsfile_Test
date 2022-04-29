@@ -11,7 +11,7 @@
   <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\opcuamap.br">
     <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config1\pc\connectivity\opcua\opcuamap.uad" LastWriteTime="2022-04-07 12:23:30" />
     <Prerequisite ID="$(AS_PROJECT_PATH)\logical\global.var" LastWriteTime="2022-04-07 11:27:44" />
-    <CommandLine Parameter="'Z:/HYEONGJUN KIM/Hyundai_Heavy_Industry/BR_Projects/AS_Target_Simulink_Test/Physical/Config1/PC/Connectivity/OpcUA/OpcUaMap.uad' -o 'Z:/HYEONGJUN KIM/Hyundai_Heavy_Industry/BR_Projects/AS_Target_Simulink_Test/Temp/Objects/Config1/PC/OpcUaMap.br' -H 'Z:/HYEONGJUN KIM/Hyundai_Heavy_Industry/BR_Projects/AS_Target_Simulink_Test/Physical/Config1/Hardware.hw' -B D4.52 -c Config1 -P 'Z:/HYEONGJUN KIM/Hyundai_Heavy_Industry/BR_Projects/AS_Target_Simulink_Test' " />
+    <CommandLine Parameter="'Z:/HYEONGJUN KIM/Hyundai_Heavy_Industry/BR_Projects/AS_Target_Simulink_Test_Jenkins/Physical/Config1/PC/Connectivity/OpcUA/OpcUaMap.uad' -o 'Z:/HYEONGJUN KIM/Hyundai_Heavy_Industry/BR_Projects/AS_Target_Simulink_Test_Jenkins/Temp/Objects/Config1/PC/OpcUaMap.br' -H 'Z:/HYEONGJUN KIM/Hyundai_Heavy_Industry/BR_Projects/AS_Target_Simulink_Test_Jenkins/Physical/Config1/Hardware.hw' -B D4.52 -c Config1 -P 'Z:/HYEONGJUN KIM/Hyundai_Heavy_Industry/BR_Projects/AS_Target_Simulink_Test_Jenkins' " />
   </Rule>
   <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\ashwac.br">
     <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config1\hardware.hw" LastWriteTime="2022-04-04 17:42:32" />
@@ -362,7 +362,7 @@
   </Rule>
   <Rule ID="$(AS_PROJECT_PATH)\binaries\config1\pc\transfer.lst">
     <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\iomap.br" LastWriteTime="2022-04-20 16:42:16" />
-    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\opcuamap.br" LastWriteTime="2022-04-20 16:42:16" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\opcuamap.br" LastWriteTime="2022-04-29 14:41:48" />
     <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\ashwac.br" LastWriteTime="2022-04-20 16:42:14" />
     <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\sysconf.br" LastWriteTime="2022-04-20 16:42:14" />
     <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\asfw.br" LastWriteTime="2022-04-20 16:42:14" />
