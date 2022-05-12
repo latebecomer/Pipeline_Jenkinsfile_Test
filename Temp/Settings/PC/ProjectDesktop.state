@@ -1,3 +1,3 @@
 <?xml version="1.0"?>
 <?AutomationStudio Version=3.0?>
-<Project xmlns="http://br-automation.co.at/AS/Project"><Active ID="0"/><Configuration Name="Config1"/><ConfigurationFiles xmlns="" ConfigurationName="Config1" ActiveConfigurationFile="\Diagnosis\Config1\PC\CPU.PVM"><ConfigurationFile Placement="\Diagnosis\Config1\PC\CPU.PVM,,4,44,0,1,-1,-1,-1,-1,2,24,875,479"/></ConfigurationFiles></Project>
+<Project xmlns="http://br-automation.co.at/AS/Project"><Active ID="0"/><Configuration Name="Config1"/><ConfigurationFiles xmlns="" ConfigurationName="Config1" ActiveConfigurationFile="\Diagnosis\Config1\PC\CPU.PVM"><ConfigurationFile Placement="\Diagnosis\Config1\PC\CPU.PVM,,4,44,0,1,-1,-1,-1,-1,2,24,1512,374"/></ConfigurationFiles></Project>
