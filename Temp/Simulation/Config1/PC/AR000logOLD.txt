@@ -1,21 +1,21 @@
-Sat Apr 23 15:23:37 2022
+Thu May 12 23:01:36 2022
 COPYRIGHT (C) B&R Industrial Automation GmbH
 
-Sat Apr 23 15:23:37 2022
+Thu May 12 23:01:36 2022
 No ARsim registration found!
 
-Sat Apr 23 15:23:37 2022
-InstanceName: 01d856daaa7408a0
+Thu May 12 23:01:36 2022
+InstanceName: 01d86608cb1ee240
 
-Sat Apr 23 15:23:37 2022
-WorkingDirectory: \\10.74.22.95\Personal\HYEONGJUN KIM\Hyundai_Heavy_Industry\BR_Projects\AS_Target_Simulink_Test\Temp\Simulation\Config1\PC\
+Thu May 12 23:01:36 2022
+WorkingDirectory: \\10.74.22.95\Personal\HYEONGJUN KIM\Hyundai_Heavy_Industry\BR_Projects\AS_Target_Simulink_Test_Jenkins\Temp\Simulation\Config1\PC\
 
-Sat Apr 23 15:23:37 2022
+Thu May 12 23:01:36 2022
 COMMAND_COLDSTART
 
-Sat Apr 23 15:23:39 2022
+Thu May 12 23:01:38 2022
 Version: D4.52
 
-Sat Apr 23 17:47:19 2022
+Thu May 12 23:12:33 2022
 COMMAND_TERMINATE
 

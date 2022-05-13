@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ProjectInformation>
+	<ConfigurationID>AS_Target_Simulink_Test_Config1</ConfigurationID>
+	<ConfigVersion>1.0.0</ConfigVersion>
+	<CPUType>AR000</CPUType>
+	<CompatibleCpuCode></CompatibleCpuCode>
+	<OrderNumber>PC</OrderNumber>
+	<RuntimeType>AR Simulation</RuntimeType>
+	<ARVersion>D4.52</ARVersion>
+	<BRModuleSystem>SAFE</BRModuleSystem>
+	<UserPartitionSize>1048576</UserPartitionSize>
+	<LoggerModulesSize>819200</LoggerModulesSize>
+</ProjectInformation>
